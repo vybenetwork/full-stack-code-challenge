@@ -6,11 +6,11 @@ Your challenge is to create a simple React application with a Node API backend, 
 
 **Backend - Node API**
 
-Your backend will be a Node.js server, which will interact with the Solana blockchain through the public RPC endpoint `https://solana-mainnet.rpc.extrnode.com/`. You will make use of the `getTokenSupply` and `getRecentPerformanceSamples` RPC methods. 
+Your backend will be a Node.js server, which will interact with the Solana blockchain through the public RPC endpoint `https://solana-mainnet.rpc.extrnode.com/`. You will make use of the `getTokenSupply` and `getRecentPerformanceSamples` RPC methods. Use the `@solana/web3.js` npm package to connect to the RPC server and call the methods. 
 
 You should fetch data for five of your most bullish SPL tokens. For each token, you will fetch the current supply and use the price API `https://price.jup.ag/v4/price?ids=pid,pid` (replace pid with a comma separated list of addresses) to calculate the market cap.
 
-You should also fetch the Solana transactions per second metric, and create endpoints for this data. 
+You should also fetch the Solana transactions-per-second (TPS) metric, and create endpoints for this data. 
 
 **Frontend - React Application**
 
